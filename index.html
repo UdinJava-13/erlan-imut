@@ -1,286 +1,116 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NusaDigi - Agensi Kreatif</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        
-
-        .banner {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/1600/900?random=1') no-repeat center center;
-            background-size: cover;
-            padding: 15% 0;
-            color: white;
-        }
-
-
-        .layanan-icon {
-            width: 90px;
-            height: 90px;
-            background-color: #0d6efd; 
-            color: white;
-            border-radius: 20px; 
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 35px;
-            margin-bottom: 20px;
-            transition: transform 0.3s;
-        }
-
-        .layanan-icon:hover {
-            transform: translateY(-10px);
-            background-color: #0b5ed7;
-            box-shadow: 0 10px 20px rgba(13, 110, 253, 0.3);
-        }
-
-
-        .portfolio-img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-            transition: transform 0.3s;
-        }
-        .card:hover .portfolio-img {
-            transform: scale(1.05);
-        }
-        .portfolio-card {
-            overflow: hidden;
-            border: none;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-
-        .team-img {
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 4px solid #0d6efd; 
-            padding: 5px;
-        }
-
-        .social-link {
-            width: 35px;
-            height: 35px;
-            background-color: #f8f9fa;
-            color: #333;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            margin: 0 5px;
-            transition: all 0.3s;
-        }
-        
-        .social-link:hover {
-            background-color: #0d6efd;
-            color: white;
-        }
-
-
-        .contact-section {
-            background: linear-gradient(rgba(13, 110, 253, 0.9), rgba(13, 110, 253, 0.9)), url('https://picsum.photos/1600/900?random=2') no-repeat center center;
-            background-size: cover;
-            color: white;
-        }
-    </style>
+    <title>erlan imut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">NusaDigi.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand fw-bold" href="#">erlan imut</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-medium">
-                    <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#staf">Tim</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white ms-lg-3 px-3" href="#kontak">Hubungi Kami</a></li>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#Home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Kontakx ">Kontak</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="banner text-center" id="beranda">
+    <div class="hero text-center">
         <div class="container">
-            <h4 class="display-6 mt-5">Solusi Digital Masa Depan</h4>
-            <h1 class="display-1 fw-bold mb-4">Wujudkan Ide Anda</h1>
-            <a href="#layanan" class="btn btn-primary btn-lg px-4 me-2">Mulai Sekarang</a>
-            <a href="#portofolio" class="btn btn-outline-light btn-lg px-4">Lihat Karya</a>
+            <h1 class="fw-bold">Selamat Datang Di Blog Mas Erlan</h1>
+            <p class="lead">erlan imut banget</p>
+            <a href="#Blog" class="btn btn-light me-2">Blog</a>
+            <a href="#kontak" class="btn btn-outline-light">Kontak</a>
         </div>
-    </section>
+    </div>
 
-    <section id="layanan" class="py-5">
-        <div class="container text-center pt-5">
-            <h2 class="display-5 fw-bold mb-3">Layanan Kami</h2>
-            <p class="text-muted mb-5">Kami menyediakan solusi komprehensif untuk bisnis Anda di era digital.</p>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="layanan-icon"><i class="fa-solid fa-code"></i></div>
-                    <h4>Web Development</h4>
-                    <p class="text-muted">Pembuatan website responsif, modern, dan dioptimasi penuh untuk meningkatkan kredibilitas bisnis Anda.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="layanan-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <h4>Mobile Apps</h4>
-                    <p class="text-muted">Pengembangan aplikasi mobile berbasis Android & iOS yang super mulus dan mudah digunakan pengguna.</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="layanan-icon"><i class="fa-solid fa-bullhorn"></i></div>
-                    <h4>Digital Marketing</h4>
-                    <p class="text-muted">Strategi pemasaran di sosial media dan search engine untuk melipatgandakan omset Anda.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portofolio" class="py-5 bg-light">
-        <div class="container pt-5">
-            <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold mb-3">Karya Terbaik Kami</h2>
-                <p class="text-muted">Beberapa proyek luar biasa yang membanggakan.</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="https://picsum.photos/400/300?random=3" class="portfolio-img" alt="Proyek 1">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">E-Commerce App</h5>
-                            <p class="card-text text-muted">Aplikasi Mobile Belanja Online</p>
-                        </div>
+    <div id="Blog" class="container py-5">
+        <h2 class="mb-4">Blog mas erlan</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="erlan1.jpg" class="card-img-top" alt="Proyek 1">
+                    <div class="card-body">
+                        <h5 class="card-title">erlan di puncak merbabu</h5>
+                        <p class="card-text text-muted">mas erlan di puncak merbabu</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="https://picsum.photos/400/300?random=4" class="portfolio-img" alt="Proyek 2">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Corporate Web</h5>
-                            <p class="card-text text-muted">Situs Perusahaan Manufaktur</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="erlan2.jpg" class="card-img-top" alt="Proyek 2">
+                    <div class="card-body">
+                        <h5 class="card-title">erlan di slamet</h5>
+                        <p class="card-text text-muted">mas erlan di slamet</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card portfolio-card h-100">
-                        <img src="https://picsum.photos/400/300?random=5" class="portfolio-img" alt="Proyek 3">
-                        <div class="card-body text-center">
-                            <h5 class="card-title fw-bold">Fintech Dashboard</h5>
-                            <p class="card-text text-muted">Sistem Pengelolaan Finansial</p>
-                        </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="erlan3.jpg" class="card-img-top" alt="Proyek 3">
+                    <div class="card-body">
+                        <h5 class="card-title">erlan di gede</h5>
+                        <p class="card-text text-muted">erlan di puncak gunung gede</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="tentang" class="py-5">
-        <div class="container pt-5">
+    <div id="tentang" class="bg-light py-5">
+        <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="https://picsum.photos/600/400?random=6" class="img-fluid rounded-4 shadow-lg" alt="Tentang Kami">
+                <div class="col-md-6 mb-3">
+                    <img src="erlan.jpg" class="img-fluid rounded" alt="Tentang Kami">
                 </div>
-                <div class="col-md-6 px-lg-5">
-                    <h2 class="display-5 fw-bold mb-4">Siapa Nusa<span class="text-primary">Digi</span>?</h2>
-                    <p class="text-muted mb-4">NusaDigi adalah agensi kreatif digital yang berfokus pada inovasi teknologi terkini. Berdiri sejak tahun 2020, kami membantu berbagai industri bertransformasi penuh ke arah digital.</p>
-                    <p class="text-muted">Misi kami jelas: Menghadirkan teknologi *top-tier* yang cantik dipandang dan luar biasa saat digunakan.</p>
-                    <a href="#kontak" class="btn btn-outline-primary mt-3 px-4">Konsultasi Gratis</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="staf" class="py-5 bg-light text-center">
-        <div class="container pt-5">
-            <h2 class="display-5 fw-bold mb-3">Tim Ahli Kami</h2>
-            <p class="text-muted mb-5">Otak dan kreativitas di balik layar proyek Anda.</p>
-            
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200/200?random=7" class="team-img mb-3" alt="Tim 1">
-                    <h4 class="fw-bold">Rangga Pratama</h4>
-                    <p class="text-primary fw-semibold">Lead Developer</p>
-                    <div>
-                        <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200/200?random=8" class="team-img mb-3" alt="Tim 2">
-                    <h4 class="fw-bold">Alya Putri</h4>
-                    <p class="text-primary fw-semibold">UI/UX Designer</p>
-                    <div>
-                        <a href="#" class="social-link"><i class="fa-brands fa-dribbble"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-behance"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://picsum.photos/200/200?random=9" class="team-img mb-3" alt="Tim 3">
-                    <h4 class="fw-bold">Bimasakti</h4>
-                    <p class="text-primary fw-semibold">Digital Marketer</p>
-                    <div>
-                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-                    </div>
+                <div class="col-md-6">
+                    <h2>Tentang Mas Erlan</h2>
+                    <p class="text-muted">Mas Erlan sekolah di 2 ceer mas erlan punya cita cita jadi anak mang ipunk biar ngga di hukum pas telat.</p>
+                    <a href="#kontak" class="btn btn-primary">Hubungi Mas Erlan</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="kontak" class="contact-section py-5">
-        <div class="container pt-5 pb-5 text-center">
-            <h2 class="display-5 fw-bold mb-3 text-white">Hubungi Kami</h2>
-            <p class="mb-5 text-white-50">Mari berdiskusi untuk menyukseskan proyek impian Anda.</p>
-            
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card bg-white p-4 p-md-5 shadow-lg border-0 rounded-4">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="Nama Lengkap" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="email" class="form-control form-control-lg bg-light border-0" placeholder="Alamat Email" required>
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" class="form-control form-control-lg bg-light border-0" placeholder="Subjek / Keperluan">
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control form-control-lg bg-light border-0" rows="5" placeholder="Tulis rincian proyek Anda di sini..."></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="button" class="btn btn-primary btn-lg w-100 fw-bold">Kirim Pesan Sekarang</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-4">
+    <div id="kontak" class="py-5">
         <div class="container">
-            <p class="mb-0 text-white-50">&copy; 2026 NusaDigi. Dibuat dengan <i class="fa-solid fa-heart text-danger"></i> menggunakan Bootstrap 5.</p>
+            <h2 class="mb-4">Kontak</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" placeholder="Nama kamu">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" placeholder="Email kamu">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea class="form-control" rows="4" placeholder="Tuliskan pesanmu untuk mas erlan"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Kirim ke mas erlan</button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 erlan never die</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
